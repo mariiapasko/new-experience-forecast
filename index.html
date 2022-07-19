@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weather forecast</title>
+    <meta charset="UTF-8" />
+    <link href="src/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/02649d1ece.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Permanent+Marker&display=swap"
+      rel="stylesheet"
+		/>
+		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+
+  <body>
+    <h1>
+      Weather forecast
+    </h1>
+    <div class="container">
+      <form class="row g-3"id="search-form">
+              <div class="col-6">
+               <label for="Search for the place" class="visually-hidden">Enter a city</label>
+                <input type="text" class="form-control" id="city-input" placeholder="Enter a city" autocomplete="off"
+                autofocus="on"/>
+              </div>
+              <div class="col-auto">
+                <input type="submit" value = "Search" class="btn btn-primary mb-3"></button>
+							</div>
+							<div class="col-auto">
+								<input type="submit" id = "current-button" 
+								value = "Current" class="btn btn-primary mb-3"></button>
+              </div>
+            </form>
+      </div>
+      <h2 id="city"> Kharkiv</h2>
+
+      <div class="row indicators">
+        <div class="col-9" id="today-date"></div>
+        <br />
+        <div class="col-6" id="daily-temperature-celsius">  <span id="temperature">
+              <span id="temperatureToday">18</span>
+              <span id="FahrenheitPlusCelsius">
+              <span id="celsius"><a href="#">°C</a></span>
+              <span id="separator">|</span>
+              <span id="fahrenheit"><a href="#">°F</a></span>
+              </span>
+            </span></div>
+        <div class="col-6" id="weather-details">
+          <ul>
+            <li>Wind: 3 m/s </li>
+            <li>Humidity: 50% </li>
+            <li>Precipitation: 39%</li>
+          <ul>
+          </div>
+          </div>
+        <br />
+        <div class="row">
+          <div class="col-2 day">Mon<br />26°C /<br />21°C</div>
+          <div class="col-2 day">Tue<br />28°C /<br />23°C</div>
+          <div class="col-2 day">Wed<br />30°C /<br />21°C</div>
+          <div class="col-2 day">Thu<br />25°C /<br />19°C</div>
+          <div class="col-2 day">Fri<br />20°C /<br />16°C</div>
+        </div>
+      </div>
+      <div class="row"></div>
+      <script src="src/index.js"></script>
+    </div>
+  </body>
+</html>

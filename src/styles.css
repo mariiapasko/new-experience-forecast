@@ -1,0 +1,42 @@
+h1 {
+  color: black;
+}
+h2 {
+  font-size: 24px;
+}
+body {
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(137, 210, 253) 0%,
+    rgb(255, 241, 188) 90%
+  );
+  font-family: "Josefin Sans", sans-serif;
+  padding: 20px;
+  margin: 10px;
+}
+
+li {
+  list-style-type: none;
+}
+.indicators {
+  border: 3px solid #5e93b1;
+  border-radius: 10px;
+  padding-bottom: 5px;
+}
+.day {
+  border: 2px solid #5e93b1;
+  margin-left: 15px;
+  border-radius: 10px;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.today {
+  padding-top: 5px;
+  font-size: large;
+}
+
+#temperatureToday {
+  text-align: center;
+  font-size: 30px;
+}
